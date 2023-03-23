@@ -1,4 +1,4 @@
-class IwLog {
+export class IwLog {
     private didAttachListeners = false
 
     attachListeners(): void {
@@ -77,7 +77,7 @@ class IwLog {
     }
 }
 
-class IwLogVanilla extends IwLog {
+export class IwLogVanilla extends IwLog {
     attachListeners() {
         super.attachListeners()
 
@@ -160,7 +160,7 @@ class IwLogVanilla extends IwLog {
     }
 }
 
-class IwLogHvut extends IwLog {
+export class IwLogHvut extends IwLog {
     listeners: any = {}
 
     private hvutCheckFreqMs = 250
@@ -245,12 +245,3 @@ class IwLogHvut extends IwLog {
         this.listeners["battleStart"] = battleStartListener
     }
 }
-
-setTimeout(() => {
-    const isHvutActive = !!document.querySelector("#hvut-top")
-
-    // @ts-ignore
-    unsafeWindow.IwLog = isHvutActive ? new IwLogHvut() : new IwLogVanilla()
-    // @ts-ignore
-    unsafeWindow.IwLog.attachListeners()
-}, 500)
