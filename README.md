@@ -28,9 +28,9 @@ For dev builds, it might be easier to [enable file access](https://www.tampermon
       "info": {
         "name": "Legendary Charged Cotton Pants of the Heaven-sent",
         "eid": "283751495",
-        "key": "223b9d5bf8",
-        "date": "2023-03-22T21:06:02.002Z"
-      }
+        "key": "223b9d5bf8"
+      },
+      "date": "2023-03-22T21:06:02.002Z"
     },
     {
       "type": "reforge",

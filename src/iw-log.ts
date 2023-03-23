@@ -36,8 +36,8 @@ export class IwLog {
                     name: info["t"],
                     eid: eid,
                     key: info["k"],
-                    date: new Date().toISOString(),
                 },
+                date: new Date().toISOString(),
             },
         ]
 
