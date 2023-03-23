@@ -1,0 +1,12 @@
+{
+  "files": ["src/iw-log.ts"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["DOM", "es2019"],
+    "module": "amd",
+    "sourceMap": false,
+    "outFile": "dist/iw-log.js",
+    "moduleResolution": "node"
+  }
+}

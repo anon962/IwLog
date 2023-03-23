@@ -1,0 +1,10 @@
+### Setup
+
+1. `npm install`
+
+### Building
+
+1. `tsc --build --watch tsconfig.json`
+2. `node ./tools/build-userscript.js`
+
+### Samples
